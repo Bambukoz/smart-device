@@ -1,0 +1,32 @@
+$desktop-width: 1024px;
+$tablet-width: 1023px;
+$mobile-width: 767px;
+$min-width: 320px;
+$retina-x2: 2dppx;
+$padding-desktop: 242px;
+$padding-tablet: 35px;
+$padding-mobile: 16px;
+
+$color-primary: #00b2ff;
+$color-dark-blue: #1b2d37;
+$color-dark-blue-05: rgba(27,45,55,0.5);
+$color-text-light-blue: #788891;
+$color-white: #ffffff;
+$color-black: #000000;
+$color-gray: #666666;
+$color-light-gray: #c4c4c4;
+$color-lighter-gray: #cdcdcd;
+$background-color-primary: $color-white;
+$background-color-secondary: $color-dark-blue;
+$background-color-black: #131314;
+$background-color-white-gray: #fafafa;
+$border-color: #ebebeb;
+$border-color-gray: rgba(98, 105, 98, 0.2);
+
+$font-family-primary: "Roboto Condensed", "Arial", sans-serif;
+$font-family-secondary: "PT Mono", "Courier", monospace;
+
+$font-size: 16px;
+$line-height: 22px;
+$color-text: $color-black;
+$font-weight: 400;
