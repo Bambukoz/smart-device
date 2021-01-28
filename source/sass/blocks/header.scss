@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  justify-content: center;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  z-index: 1;
+
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @include mobile {
+    padding-top: 17px;
+  }
+}

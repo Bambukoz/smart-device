@@ -16,12 +16,118 @@
 </head>
 
 <body class="page">
-<header class="page__header">
+<header class="page__header header">
+  <div class="page__wrapper">
+    <a class="logo" aria-label="Логотип Smart device - умные технологии">
+      <svg class="logo__desktop" width="202" height="52">
+        <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
+      </svg>
+      <svg class="logo__mobile" width="38" height="38">
+        <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
+      </svg>
+    </a>
+    <div class="contacts">
+      <a class="contacts__link contacts__link--mail" href="mailto:info@sd.ru">
+        <svg width="26" height="19">
+          <use xlink:href="img/sprite.svg#icon-mail"></use>
+        </svg>
+        <span>info@sd.ru</span>
+      </a>
+      <a class="contacts__link contacts__link--phone" href="tel:+74950005252">
+        <svg width="25" height="24">
+          <use xlink:href="img/sprite.svg#icon-phone"></use>
+        </svg>
+        <span>+7 (495) 000 52 52</span>
+      </a>
+      <a class="btn btn__request" href="#" target="_blank" rel="noopener noreferrer">Заказать звонок</a>
+    </div>
+  </div>
 </header>
 
 <main class="page__main main">
+  <section class="lead"></section>
 </main>
+
 <footer class="page__footer footer">
+  <div class="page__wrapper page__wrapper--footer">
+    <section class="footer__container footer__container--social">
+      <h2 class="visually-hidden">Мы есть в социальных сетях</h2>
+      <a class="logo logo--footer" href="index.html">
+        <svg width="216" height="52">
+          <use xlink:href="img/sprite.svg#logo-footer"></use>
+        </svg>
+      </a>
+      <p class="footer__text footer__text--social">1999-2018 SD Service Devices</p>
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Мы в Facebook">
+            <svg width="27" height="27">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Мы в Одноклассниках">
+            <svg width="27" height="26">
+              <use xlink:href="img/sprite.svg#icon-ok"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Мы в Вконтакте">
+            <svg width="27" height="26">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="footer__container footer__container--nav">
+      <h2>Разделы сайта</h2>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" target="_blank" rel="noopener noreferrer">О компании</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" target="_blank" rel="noopener noreferrer">Комплектующие</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" target="_blank" rel="noopener noreferrer">Продукты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" target="_blank" rel="noopener noreferrer">Доставка</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" target="_blank" rel="noopener noreferrer">Производство печатных&nbsp;плат</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" target="_blank" rel="noopener noreferrer">Контакты</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" target="_blank" rel="noopener noreferrer">Монтаж печатных плат</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <section class="footer__container footer__container--location">
+      <h2>Наш офис</h2>
+      <div class="footer__location">
+        <address>г. Мытищи, Олимпийский проспект,&nbsp;д.10</address>
+        <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+        <a href="tel:+79250038767">+7 (925) 003-87-67</a>
+        <a href="tel:+792692608079">+7 (926) 926-080-79</a>
+      </div>
+    </section>
+  </div>
+  <div class="page__wrapper">
+    <section class="footer__copyright">
+      <h2 class="visually-hidden">Копирайт</h2>
+      <p class="footer__text"><span>Все права защищены</span>1999-2018 SD Service Devices</p>
+      <a href="#" target="_blank" rel="noopener noreferrer">Условия конфиденциальности</a>
+      <p>Developed by wow studio</p>
+    </section>
+  </div>
 </footer>
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>

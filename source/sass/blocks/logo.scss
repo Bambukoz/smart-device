@@ -1,0 +1,36 @@
+.logo {
+  margin-right: 30px;
+
+  @include mobile {
+    margin-right: 0;
+    margin-left: 2px;
+  }
+
+  &--footer {
+    margin-right: 0;
+    margin-bottom: 48px;
+
+    @include tablet {
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+
+    @include mobile {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.logo__desktop {
+  @include mobile {
+    display: none;
+  }
+}
+
+.logo__mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}

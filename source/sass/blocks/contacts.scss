@@ -1,0 +1,99 @@
+.contacts {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-right: 3px;
+  padding-bottom: 6px;
+
+  @include tablet {
+    padding-right: 0;
+    padding-bottom: 10px;
+  }
+
+  @include mobile {
+    padding-bottom: 4px;
+  }
+}
+
+.contacts__link {
+  display: block;
+  position: relative;
+  margin-left: 4.1%;
+
+  @include tablet {
+    line-height: 0;
+  }
+
+  &--phone {
+    margin-left: 7.5%;
+
+    @include tablet {
+      margin-left: 6.5%;
+    }
+
+    @include mobile {
+      margin-left: 9.7%
+    }
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.contacts__link span {
+  display: block;
+  font-family: $font-family-secondary;
+  color: $color-white;
+  //font-size: 0.835vw;
+  font-size: 16px;
+  white-space: nowrap;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.contacts__link svg {
+  position: absolute;
+  fill: $color-primary;
+  top: 19px;
+  left: 0;
+
+  @include tablet {
+    position: static;
+  }
+}
+
+.contacts__link--mail svg {
+  width: 20px;
+  height: 14px;
+
+  @include tablet {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.contacts__link--phone svg {
+  width: 18px;
+  height: 18px;
+
+  @include tablet {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.contacts__link--mail span {
+  padding-left: 39px;
+}
+
+.contacts__link--phone span {
+  padding-left: 34px;
+}

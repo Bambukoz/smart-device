@@ -1,0 +1,32 @@
+.social {
+  @include list-reset;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  @include tablet {
+    width: 15.3%;
+  }
+
+  @include mobile {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.social__item {
+  @include style-reset;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__item a {
+  line-height: 0;
+}
+
+.social__item svg {
+  fill: $color-lighter-gray;
+}

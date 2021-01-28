@@ -1,0 +1,23 @@
+.btn {
+  @include btn-reset;
+  text-align: center;
+  border: 1px solid $color-white;
+  border-radius: 5px;
+}
+
+.btn__request {
+  display: block;
+  width: 180px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-white;
+  padding: 10px 12px;
+  margin-left: 4.1%;
+
+  @include tablet {
+    display: none;
+  }
+}

@@ -35,6 +35,7 @@
     "build": "gulp build",
     "start": "gulp start",
     "images": "gulp images && gulp webp",
+    "img":  "gulp images" ,
     "webp": "gulp webp",
     "sprite": "gulp sprite",
     "deploy": "gulp deploy"

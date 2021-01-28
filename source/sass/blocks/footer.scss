@@ -1,0 +1,238 @@
+.footer {
+  position: relative;
+  min-height: 316px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 65px;
+  padding-bottom: 14px;
+
+  @include tablet {
+    min-height: 457px;
+    padding-top: 19px;
+  }
+
+  @include mobile {
+    padding-top: 46px;
+    padding-bottom: 26px;
+  }
+
+  &::before {
+    @include tablet {
+      content: '';
+      position: absolute;
+      top: 96px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $border-color-gray-02;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 67px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $border-color-gray-02;
+
+    @include tablet {
+      bottom: 69px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 71px;
+
+  @include tablet {
+    padding-top: 38px;
+    padding-bottom: 44px;
+  }
+
+  @include mobile {
+    position: relative;
+    padding: 29px 15px 27px;
+  }
+
+  &--social {
+    width: 25.4%;
+    margin-right: 4.4%;
+
+    @include tablet {
+      width: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 0;
+      padding-bottom: 18px;
+      margin-right: 0;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-bottom: 48px;
+    }
+  }
+
+  &--nav {
+    width: 46%;
+    margin-right: 0.5%;
+
+    @include tablet {
+      width: 50%;
+      margin-right: 2%;
+    }
+
+    @include mobile {
+      width: 100%;
+      border-top: 1px solid $border-color-gray-02;
+      border-bottom: 1px solid $border-color-gray-02;
+      margin-right: 0;
+    }
+  }
+
+  &--location {
+    width: 23.6%;
+
+    @include tablet {
+      width: 48%;
+    }
+
+    @include mobile {
+      width: 100%;
+      border-bottom: 1px solid $border-color-gray-02;
+    }
+  }
+}
+
+.footer__container h2 {
+  @include style-reset;
+  //font-size: 0.778vw;
+  font-size: 15px;
+  line-height: 107%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-dark-blue;
+  margin-bottom: 25px;
+
+  @include mobile {
+    margin-bottom: 0;
+  }
+}
+
+.footer__location {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include mobile {
+    //display: none;
+    margin-top: 31px;
+  }
+}
+
+.footer__container a,
+.footer__location address {
+  font-family: $font-family-secondary;
+  //font-size: 0.78vw;
+  font-size: 15px;
+  line-height: 167%;
+  color: $color-dark-blue-05;
+}
+
+.footer__location address {
+  font-style: normal;
+}
+
+.footer__copyright {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  @include tablet {
+    padding-top: 14px;
+    padding-left: 2px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 27px;
+    padding-left: 0;
+  }
+}
+
+.footer__copyright p,
+.footer__copyright a,
+.footer__text {
+  font-family: $font-family-secondary;
+  font-size: 13px;
+  line-height: 185%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $color-dark-blue-05;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.footer__copyright a {
+  width: 34%;
+
+  @media (max-width: 1200px) {
+    width: 31%;
+  }
+
+  @include mobile {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 21px;
+  }
+}
+
+.footer__text {
+  display: inline-flex;
+  width: 32.2%;
+  min-width: 410px;
+  justify-content: space-between;
+  margin-right: 30px;
+
+  @include tablet {
+    display: none;
+  }
+
+  &--social {
+    display: none;
+
+    @include tablet {
+      display: block;
+      width: 33%;
+      min-width: auto;
+      margin-left: 2.5%;
+      margin-right: 0;
+    }
+
+    @include mobile {
+      width: 100%;
+      margin-left: 0;
+      text-align: center;
+      margin-bottom: 31px;
+    }
+  }
+}
+
+.footer__text span {
+  margin-right: 20px;
+}

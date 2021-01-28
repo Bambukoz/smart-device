@@ -18,3 +18,35 @@
 .page__footer {
   width: 100%;
 }
+
+.page__wrapper {
+  width: 73.6%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 1400px) {
+    width: 88%;
+  }
+
+  @include tablet {
+    width: 93.5%;
+  }
+
+  @include mobile {
+    width: 90.4%;
+  }
+
+  &--footer {
+    @include tablet {
+      flex-wrap: wrap;
+    }
+
+    @include mobile {
+      width: 100%;
+      flex-direction: column;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
