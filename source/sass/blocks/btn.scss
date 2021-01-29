@@ -1,6 +1,9 @@
 .btn {
   @include btn-reset;
   text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   border: 1px solid $color-white;
   border-radius: 5px;
 }
@@ -8,17 +11,51 @@
 .btn__request {
   display: block;
   width: 180px;
-  height: 45px;
+  min-height: 45px;
   font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: $color-white;
   padding: 10px 12px;
   margin-left: 4.1%;
 
   @include tablet {
     display: none;
+  }
+}
+
+.btn__features {
+  display: block;
+  width: 407px;
+  min-height: 55px;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-white;
+  background-color: $color-primary;
+  border: none;
+  padding: 17px 10px;
+  margin-left: 97px;
+
+  @include tablet {
+    width: 379px;
+    margin-left: 51px;
+  }
+
+  @include mobile {
+    width: 287px;
+    margin-left: 5px;
+  }
+}
+
+.btn__features span:not(.btn__text) {
+  @include mobile {
+    display: none;
+  }
+}
+
+.btn__text {
+  display: none;
+
+  @include mobile {
+    display: block;
   }
 }
 

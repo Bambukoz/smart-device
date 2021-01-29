@@ -19,7 +19,7 @@
 
   &::before {
     @include tablet {
-      content: '';
+      content: "";
       position: absolute;
       top: 96px;
       left: 0;
@@ -121,7 +121,7 @@
 .footer__container h2 {
   @include style-reset;
   font-size: 15px;
-  line-height: 107%;
+  line-height: 16px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-dark-blue;

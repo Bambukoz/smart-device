@@ -45,7 +45,30 @@
 </header>
 
 <main class="page__main main">
-  <section class="lead"></section>
+  <section class="lead">
+    <div class="lead__wrapper">
+      <h1>Печатные платы</h1>
+      <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
+      <a class="btn btn__features" href="#features"><span>Получить бесплатную консультацию</span><span class="btn__text">Бесплатная консультация</span></a>
+      <a class="lead__scroll" href="#form">Скролл вниз</a>
+    </div>
+    <div class="lead__img-wrapper">
+      <picture>
+        <!-- 1x: 631px; 2x: 1262px -->
+        <source media="(max-width: 767px)" type="image/webp" srcset="img/png/plate-mobile@1x.webp, img/png/plate-mobile@2x.webp 2x">
+        <!-- 1x: 535px; 2x: 1070px -->
+        <source media="(max-width: 1023px)" type="image/webp" srcset="img/png/plate-tablet@1x.webp, img/png/plate-tablet@2x.webp 2x">
+        <!-- 1x: 713px; 2x: 1426px -->
+        <source type="image/webp" srcset="img/png/plate-desktop@1x.webp, img/png/plate-desktop@2x.webp 2x">
+        <!-- 1x: 631px; 2x: 1262px -->
+        <source media="(max-width: 767px)" srcset="img/png/plate-mobile@1x.png, img/png/plate-mobile@2x.png 2x">
+        <!-- 1x: 535px; 2x: 1070px -->
+        <source media="(max-width: 1023px)" srcset="img/png/plate-tablet@1x.png, img/png/plate-tablet@2x.png 2x">
+        <!-- 1x: 713px; 2x: 1426px -->
+        <img width="713" height="655" src="img/png/plate-desktop@1x.png" srcset="img/png/plate-desktop@2x.png 2x" alt="Печатная плата">
+      </picture>
+    </div>
+  </section>
 </main>
 
 <footer class="page__footer footer">

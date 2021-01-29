@@ -1,4 +1,34 @@
 .main {
-  margin-top: -124px;
+  display: flex;
   background-color: $color-dark-blue;
+  flex-direction: column;
+  background-image: url("../img/png/bg-main-desktop@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-top: -124px;
+  padding-top: 124px;
+  overflow: hidden;
+
+  @include retina {
+    background-image: url("../img/png/bg-main-desktop@2x.png");
+  }
+
+  @include tablet {
+    background-image: url("../img/png/bg-main-tablet@1x.png");
+    margin-top: -98px;
+    padding-top: 98px;
+
+    @include retina {
+      background-image: url("../img/png/bg-main-tablet@2x.png");
+    }
+
+    @include mobile {
+      background-image: url("../img/png/bg-main-mobile@1x.png");
+
+      @include retina {
+        background-image: url("../img/png/bg-main-mobile@2x.png");
+      }
+    }
+  }
 }

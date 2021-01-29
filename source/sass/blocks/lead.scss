@@ -1,3 +1,145 @@
 .lead {
-  background-color: $color-dark-blue;
+  position: relative;
+  width: 74%;
+  display: flex;
+  min-height: 754px;
+  padding-top: 192px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include tablet {
+    width: 77.15%;
+    min-height: 588px;
+    padding-top: 91px;
+  }
+
+  @include mobile {
+    width: 91%;
+    min-height: 572px;
+    padding-top: 211px;
+  }
+}
+
+.lead__wrapper {
+  position: relative;
+  width: 56%;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  z-index: 1;
+
+  @include tablet {
+    width: 65%;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.lead__wrapper h1 {
+  @include style-reset;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: $color-white;
+  margin-bottom: 28px;
+
+  @include tablet {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  @include mobile {
+    font-size: 40px;
+    line-height: 47px;
+    margin-bottom: 26px;
+  }
+}
+
+.lead__wrapper p {
+  @include style-reset;
+  position: relative;
+  font-family: $font-family-secondary;
+  font-size: 22px;
+  line-height: 34px;
+  text-transform: lowercase;
+  color: $color-white;
+  padding-left: 97px;
+  margin-bottom: 44px;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 28px;
+    padding-left: 51px;
+    margin-bottom: 55px;
+  }
+  @include mobile {
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 41px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 3px;
+    width: 66px;
+    height: 2px;
+    background-color: $color-white;
+
+    @include tablet {
+      width: 33px;
+      top: 16px;
+    }
+
+    @include mobile {
+      left: 4px;
+    }
+  }
+}
+
+.lead__scroll {
+  position: absolute;
+  bottom: 108px;
+  left: -56px;
+  width: 133px;
+  display: block;
+  font-family: $font-family-secondary;
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-white;
+  opacity: 0.5;
+  transform: rotate(-90deg);
+  padding: 20px;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.lead__img-wrapper {
+  position: absolute;
+  top: -6px;
+  right: -73px;
+  width: 713px;
+  height: 655px;
+
+  @include tablet {
+    top: -138px;
+    right: -293px;
+    width: 535px;
+    height: 506px;
+  }
+
+  @include mobile {
+    top: -118px;
+    right: -351px;
+    width: 631px;
+    height: 480px;
+  }
 }
