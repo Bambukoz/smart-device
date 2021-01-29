@@ -13,7 +13,7 @@
   }
 
   @include mobile {
-    padding-top: 46px;
+    padding-top: 23px;
     padding-bottom: 26px;
   }
 
@@ -52,6 +52,7 @@
 }
 
 .footer__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-bottom: 71px;
@@ -63,6 +64,7 @@
 
   @include mobile {
     position: relative;
+    border-bottom: 1px solid $border-color-gray-02;
     padding: 29px 15px 27px;
   }
 
@@ -83,6 +85,7 @@
     @include mobile {
       flex-direction: column;
       justify-content: flex-start;
+      padding-top: 23px;
       padding-bottom: 48px;
     }
   }
@@ -98,8 +101,6 @@
 
     @include mobile {
       width: 100%;
-      border-top: 1px solid $border-color-gray-02;
-      border-bottom: 1px solid $border-color-gray-02;
       margin-right: 0;
     }
   }
@@ -113,14 +114,12 @@
 
     @include mobile {
       width: 100%;
-      border-bottom: 1px solid $border-color-gray-02;
     }
   }
 }
 
 .footer__container h2 {
   @include style-reset;
-  //font-size: 0.778vw;
   font-size: 15px;
   line-height: 107%;
   letter-spacing: 0.05em;
@@ -139,7 +138,7 @@
   flex-direction: column;
 
   @include mobile {
-    //display: none;
+    display: none;
     margin-top: 31px;
   }
 }
@@ -147,7 +146,6 @@
 .footer__container a,
 .footer__location address {
   font-family: $font-family-secondary;
-  //font-size: 0.78vw;
   font-size: 15px;
   line-height: 167%;
   color: $color-dark-blue-05;

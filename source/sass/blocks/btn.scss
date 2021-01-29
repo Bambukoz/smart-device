@@ -21,3 +21,34 @@
     display: none;
   }
 }
+
+.btn__accordion {
+  display: none;
+
+  @include mobile {
+    position: absolute;
+    top: 17px;
+    right: 5px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    background-image: url("../img/svg/btn-plus.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 20px;
+
+    &--nav:checked + .nav {
+      display: flex;
+    }
+
+    &--location:checked + .footer__location {
+      display: flex;
+    }
+
+    &:checked {
+      background-image: url("../img/svg/btn-minus.svg");
+    }
+  }
+}
