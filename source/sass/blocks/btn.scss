@@ -1,5 +1,8 @@
 .btn {
   @include btn-reset;
+  width: 180px;
+  min-height: 45px;
+  font-size: 14px;
   text-align: center;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -10,9 +13,6 @@
 
 .btn__request {
   display: block;
-  width: 180px;
-  min-height: 45px;
-  font-size: 14px;
   color: $color-white;
   padding: 10px 12px;
   margin-left: 4.1%;
@@ -25,7 +25,7 @@
 .btn__features {
   display: block;
   width: 407px;
-  min-height: 55px;
+  min-height: 54px;
   font-size: 16px;
   line-height: 19px;
   color: $color-white;
@@ -56,6 +56,18 @@
 
   @include mobile {
     display: block;
+  }
+}
+
+.btn__about {
+  display: block;
+  color: $color-primary;
+  border-color: $color-primary;
+  padding: 10px 13px;
+  margin-top: auto;
+
+  @include tablet {
+    margin-left: 3px;
   }
 }
 

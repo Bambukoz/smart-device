@@ -1,0 +1,122 @@
+.about {
+  width: 60.9%;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  padding-top: 76px;
+  padding-left: 180px;
+  padding-right: 18px;
+
+  @include tablet {
+    width: 93.5%;
+    padding-top: 27px;
+    padding-left: 185px;
+    padding-right: 0;
+  }
+
+  @include mobile {
+    width: 91%;
+    padding-top: 36px;
+    padding-left: 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: -30px;
+    display: block;
+    width: 220px;
+    height: 317px;
+    background-image: url("../img/png/year-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include retina {
+      background-image: url("../img/png/year-desktop@2x.png");
+    }
+
+    @include tablet {
+      top: 25px;
+      left: -33px;
+      width: 250px;
+      height: 361px;
+    }
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.about h2 {
+  @include style-reset;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-gray;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 32px;
+    line-height: 45px;
+    margin-bottom: 24px;
+  }
+
+  @include mobile {
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
+}
+
+.about p {
+  font-family: $font-family-secondary;
+  line-height: 22px;
+  color: $color-gray;
+  margin-top: 0;
+
+  @include tablet {
+    padding-left: 3px;
+  }
+}
+
+.about__text {
+  &--top {
+    margin-bottom: 20px;
+
+    @include tablet {
+      margin-bottom: 19px;
+    }
+  }
+
+  &--bottom {
+    margin-bottom: 39px;
+
+    @include tablet {
+      margin-bottom: 42px
+    }
+
+    @include mobile {
+      margin-bottom: 28px;
+    }
+  }
+
+  &--long {
+    display: inline;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &--short {
+    display: none;
+    @include tablet {
+      display: inline;
+    }
+  }
+}
