@@ -27,13 +27,13 @@
       </svg>
     </a>
     <div class="contacts">
-      <a class="contacts__link contacts__link--mail" href="mailto:info@sd.ru">
+      <a class="contacts__link contacts__link--mail" href="mailto:info@sd.ru" aria-label="Наша почта">
         <svg width="26" height="19">
           <use xlink:href="img/sprite.svg#icon-mail"></use>
         </svg>
         <span>info@sd.ru</span>
       </a>
-      <a class="contacts__link contacts__link--phone" href="tel:+74950005252">
+      <a class="contacts__link contacts__link--phone" href="tel:+74950005252" aria-label="Наш телефон">
         <svg width="25" height="24">
           <use xlink:href="img/sprite.svg#icon-phone"></use>
         </svg>
@@ -112,13 +112,77 @@
       <a class="btn btn__about" href="#">Подробнее</a>
     </section>
   </div>
+  <div class="main__container main__container--offers">
+    <section class="offers">
+      <h2>Service Device предлагает следующие товары и&nbsp;услуги</h2>
+      <ul class="offers__list">
+        <li class="offers__item">
+          <a href="#">
+            <h3>Производство печатных плат</h3>
+            <picture>
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/png/production-mobile@1x.webp, img/png/production-mobile@2x.webp 2x">
+              <!-- 1x: 715px; 2x: 1430px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/png/production-tablet@1x.webp, img/png/production-tablet@2x.webp 2x">
+              <!-- 1x: 370px; 2x: 740px -->
+              <source type="image/webp" srcset="img/png/production-desktop@1x.webp, img/png/production-desktop@2x.webp 2x">
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" srcset="img/png/production-mobile@1x.png, img/png/production-mobile@2x.png 2x">
+              <!-- 1x: 715px; 2x: 1430px -->
+              <source media="(max-width: 1023px)" srcset="img/png/production-tablet@1x.png, img/png/montage-tablet@2x.png 2x">
+              <!-- 1x: 370px; 2x: 740px -->
+              <img width="370" height="620" src="img/png/production-desktop@1x.png" srcset="img/png/production-desktop@2x.png 2x" alt="Печатная плата">
+            </picture>
+          </a>
+        </li>
+        <li class="offers__item">
+          <a href="#">
+            <h3>Монтаж печатных плат</h3>
+            <picture>
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/png/montage-mobile@1x.webp, img/png/montage-mobile@2x.webp 2x">
+              <!-- 1x: 715px; 2x: 1430px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/png/montage-tablet@1x.webp, img/png/montage-tablet@2x.webp 2x">
+              <!-- 1x: 370px; 2x: 740px -->
+              <source type="image/webp" srcset="img/png/montage-desktop@1x.webp, img/png/montage-desktop@2x.webp 2x">
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" srcset="img/png/montage-mobile@1x.png, img/png/montage-mobile@2x.png 2x">
+              <!-- 1x: 715px; 2x: 1430px -->
+              <source media="(max-width: 1023px)" srcset="img/png/montage-tablet@1x.png, img/png/montage-tablet@2x.png 2x">
+              <!-- 1x: 370px; 2x: 740px -->
+              <img width="370" height="620" src="img/png/montage-desktop@1x.png" srcset="img/png/montage-desktop@2x.png 2x" alt="Печатная плата">
+            </picture>
+          </a>
+        </li>
+        <li class="offers__item">
+          <a href="#">
+            <h3>Комплектующие для светотехники</h3>
+            <picture>
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" type="image/webp" srcset="img/png/accessories-mobile@1x.webp, img/png/accessories-mobile@2x.webp 2x">
+              <!-- 1x: 715px; 2x: 1430px -->
+              <source media="(max-width: 1023px)" type="image/webp" srcset="img/png/accessories-tablet@1x.webp, img/png/accessories-tablet@2x.webp 2x">
+              <!-- 1x: 370px; 2x: 740px -->
+              <source type="image/webp" srcset="img/png/accessories-desktop@1x.webp, img/png/accessories-desktop@2x.webp 2x">
+              <!-- 1x: 290px; 2x: 580px -->
+              <source media="(max-width: 767px)" srcset="img/png/accessories-mobile@1x.png, img/png/accessories-mobile@2x.png 2x">
+              <!-- 1x: 715px; 2x: 1430px -->
+              <source media="(max-width: 1023px)" srcset="img/png/accessories-tablet@1x.png, img/png/accessories-tablet@2x.png 2x">
+              <!-- 1x: 370px; 2x: 740px -->
+              <img width="370" height="620" src="img/png/accessories-desktop@1x.png" srcset="img/png/accessories-desktop@2x.png 2x" alt="Печатная плата">
+            </picture>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
 </main>
 
 <footer class="page__footer footer">
   <div class="page__wrapper page__wrapper--footer">
     <section class="footer__container footer__container--social">
       <h2 class="visually-hidden">Мы есть в социальных сетях</h2>
-      <a class="logo logo--footer" href="index.html">
+      <a class="logo logo--footer" href="index.html" aria-label="Логотип Smart Device">
         <svg width="216" height="52">
           <use xlink:href="img/sprite.svg#logo-footer"></use>
         </svg>

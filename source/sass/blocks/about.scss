@@ -5,21 +5,18 @@
   margin-right: auto;
   margin-left: auto;
   position: relative;
-  padding-top: 76px;
-  padding-left: 180px;
-  padding-right: 18px;
+  padding: 76px 18px 9px 180px;
 
   @include tablet {
     width: 93.5%;
-    padding-top: 27px;
-    padding-left: 185px;
-    padding-right: 0;
+    padding: 27px 0 3px 185px;
   }
 
   @include mobile {
     width: 91%;
     padding-top: 36px;
     padding-left: 0;
+    padding-bottom: 0;
   }
 
   &:before {
@@ -90,6 +87,10 @@
 
     @include tablet {
       margin-bottom: 19px;
+    }
+
+    @include mobile {
+      margin-bottom: 40px;
     }
   }
 

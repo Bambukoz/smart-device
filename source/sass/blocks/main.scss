@@ -46,16 +46,34 @@
   background-position: -296px -29px;
   background-repeat: no-repeat;
   padding-top: 112px;
-  padding-bottom: 110px;
+  padding-bottom: 101px;
 
   @include tablet {
     background-image: url("../img/svg/bg-features-tablet.svg");
     background-position: 211px 90px;
     padding-top: 54px;
-    padding-bottom: 84px;
+    padding-bottom: 80px;
   }
 
   @include mobile {
+    background-position: -120px 652px;
     padding-top: 37px;
+    padding-bottom: 65px;
+  }
+
+  &--offers {
+    background-color: $color-dark-blue;
+    background-image: none;
+    padding-top: 89px;
+    padding-bottom: 127px;
+
+    @include tablet {
+      padding-top: 51px;
+      padding-bottom: 31px;
+    }
+
+    @include mobile {
+      padding-bottom: 34px;
+    }
   }
 }
