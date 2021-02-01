@@ -106,6 +106,16 @@
   }
 }
 
+.offers__item a:hover,
+.offers__item a:focus{
+  @include animation;
+  background-color: $color-gray-03;
+}
+
+.offers__item a:active {
+  @include animation;
+  background-color: $color-gray-04;
+}
 .offers__item h3 {
   @include style-reset;
   width: 8vw;

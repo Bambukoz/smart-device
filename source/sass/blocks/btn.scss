@@ -7,19 +7,30 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  color: $color-white;
   border: 1px solid $color-white;
   border-radius: 5px;
 }
 
 .btn__request {
   display: block;
-  color: $color-white;
   padding: 10px 12px;
   margin-left: 4.1%;
 
   @include tablet {
     display: none;
   }
+}
+
+.btn__request:hover,
+.btn__request:active{
+  color: $color-primary;
+  border-color: $color-primary;
+}
+
+.btn__request:active {
+  color: $color-primary-05;
+  border-color: $color-primary-05;
 }
 
 .btn__features {
@@ -59,6 +70,17 @@
   }
 }
 
+.btn__features:hover,
+.btn__features:focus {
+  @include animation;
+  opacity: 0.9;
+}
+
+.btn__features:active {
+  @include animation;
+  opacity: 0.8;
+}
+
 .btn__about {
   display: block;
   color: $color-primary;
@@ -71,12 +93,59 @@
   }
 }
 
+.btn__about:hover,
+.btn__about:focus {
+  @include animation;
+  background-color: $color-primary;
+  color: $color-white;
+}
+
+.btn__about:active {
+  background-color: $color-primary-05;
+  border-color: $color-primary-05;
+}
+
+.btn__submit {
+  width: 14.1vw;
+  min-width: 151px;
+  min-height: 45px;
+  padding: 14px 18px 13px;
+  margin-bottom: 15px;
+  margin-right: 11px;
+
+  @include tablet {
+    width: 36.3vw;
+    padding-bottom: 15px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-bottom: 22px;
+    margin-right: 0;
+  }
+}
+
+.btn__submit:hover,
+.btn__submit:focus {
+  background-color: $color-white-03;
+}
+
+.btn__submit:active {
+  background-color: $color-white-02;
+}
+
+.btn__modal {
+  width: 100%;
+  padding-bottom: 15px;
+  margin-bottom: 26px;
+}
+
 .btn__accordion {
   display: none;
 
   @include mobile {
     position: absolute;
-    top: 17px;
+    top: 14px;
     right: 5px;
     display: block;
     width: 16px;
@@ -97,7 +166,31 @@
     }
 
     &:checked {
+      top: 13px;
       background-image: url("../img/svg/btn-minus.svg");
     }
   }
+}
+
+.btn__close {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url("../img/svg/btn-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  z-index: 11;
+}
+
+.btn__close:hover,
+.btn__close:focus {
+  opacity: 0.8;
+}
+
+.btn__close:active {
+  opacity: 0.5;
 }

@@ -98,16 +98,19 @@
 }
 
 .features__item:hover {
+  @include animation;
   background-color: $color-primary;
   border-color: $color-primary;
   cursor: pointer;
 }
 
 .features__item:hover svg {
+  @include animation;
   fill: $color-white;
 }
 
-.features__item:hover h2,
+.features__item:hover h3,
 .features__item:hover p {
+  @include animation;
   color: $color-white;
 }

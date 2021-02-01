@@ -9,14 +9,14 @@
 
   @include tablet {
     width: 77.15%;
-    min-height: 588px;
-    padding-top: 91px;
+    min-height: 608px;
+    padding-top: 111px;
   }
 
   @include mobile {
     width: 91%;
-    min-height: 572px;
-    padding-top: 211px;
+    min-height: 592px;
+    padding-top: 231px;
   }
 }
 
@@ -29,7 +29,7 @@
   z-index: 1;
 
   @include tablet {
-    width: 65%;
+    width: 73%;
   }
 
   @include mobile {
@@ -63,6 +63,7 @@
 .lead__wrapper p {
   @include style-reset;
   position: relative;
+  max-height: 300px;
   font-family: $font-family-secondary;
   font-size: 22px;
   line-height: 34px;
@@ -70,14 +71,17 @@
   color: $color-white;
   padding-left: 97px;
   margin-bottom: 44px;
+  overflow: scroll;
 
   @include tablet {
+    max-height: 185px;
     font-size: 18px;
     line-height: 28px;
     padding-left: 51px;
     margin-bottom: 55px;
   }
   @include mobile {
+    max-height: 125px;
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 41px;
@@ -122,6 +126,15 @@
   }
 }
 
+.lead__scroll:hover,
+.lead__scroll:focus {
+  opacity: 1;
+}
+
+.lead__scroll:active {
+  opacity: 0.8;
+}
+
 .lead__img-wrapper {
   position: absolute;
   top: -6px;
@@ -130,14 +143,14 @@
   height: 655px;
 
   @include tablet {
-    top: -138px;
+    top: -118px;
     right: -293px;
     width: 535px;
     height: 506px;
   }
 
   @include mobile {
-    top: -118px;
+    top: -98px;
     right: -351px;
     width: 631px;
     height: 480px;

@@ -25,17 +25,24 @@
 
   @include tablet {
     line-height: 0;
+    padding: 12px;
+  }
+
+  @include mobile {
+    padding: 5px;
   }
 
   &--phone {
     margin-left: 7.5%;
 
     @include tablet {
-      margin-left: 6.5%;
+      margin-left: 1.6%;
+      margin-right: -2.5%;
     }
 
     @include mobile {
-      margin-left: 9.7%
+      margin-left: 4.8%;
+      margin-right: -2.3%;
     }
   }
 
@@ -44,11 +51,24 @@
   }
 }
 
+.contacts__link:hover span,
+.contacts__link:focus span {
+  @include animation;
+  color: $color-primary;
+}
+
+.contacts__link:active span {
+  color: $color-primary-05;
+}
+
+.contacts__link:active svg {
+  fill: $color-primary-05;
+}
+
 .contacts__link span {
   display: block;
   font-family: $font-family-secondary;
   color: $color-white;
-  //font-size: 0.835vw;
   font-size: 16px;
   white-space: nowrap;
   padding-top: 15px;

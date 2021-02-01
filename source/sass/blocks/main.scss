@@ -1,41 +1,21 @@
 .main {
   display: flex;
   flex-direction: column;
+  margin-top: -754px;
+
+  @include tablet {
+    margin-top: -608px;
+  }
+
+  @include mobile {
+    margin-top: -592px;
+  }
 }
 
 .main__wrapper {
   width: 100%;
   display: flex;
-  background-image: url("../img/png/bg-main-desktop@1x.png");
-  background-size: cover;
-  background-color: $color-dark-blue;
-  background-repeat: no-repeat;
-  background-position: bottom;
-  margin-top: -124px;
-  padding-top: 124px;
-  overflow: hidden;
-
-  @include retina {
-    background-image: url("../img/png/bg-main-desktop@2x.png");
-  }
-
-  @include tablet {
-    background-image: url("../img/png/bg-main-tablet@1x.png");
-    margin-top: -98px;
-    padding-top: 98px;
-
-    @include retina {
-      background-image: url("../img/png/bg-main-tablet@2x.png");
-    }
-
-    @include mobile {
-      background-image: url("../img/png/bg-main-mobile@1x.png");
-
-      @include retina {
-        background-image: url("../img/png/bg-main-mobile@2x.png");
-      }
-    }
-  }
+  overflow-x: hidden;
 }
 
 .main__container {
@@ -65,7 +45,7 @@
     background-color: $color-dark-blue;
     background-image: none;
     padding-top: 89px;
-    padding-bottom: 127px;
+    padding-bottom: 81px;
 
     @include tablet {
       padding-top: 51px;
@@ -74,6 +54,25 @@
 
     @include mobile {
       padding-bottom: 34px;
+    }
+  }
+
+  &--feedback {
+    background-image: url("../img/svg/bg-form.svg");
+    background-position: 110.4% 35px;
+    background-color: $color-primary;
+    padding-top: 92px;
+    padding-bottom: 98px;
+
+    @include tablet {
+      padding-top: 80px;
+      padding-bottom: 88px;
+      background-image: none;
+    }
+
+    @include  mobile {
+      padding-top: 30px;
+      padding-bottom: 42px;
     }
   }
 }

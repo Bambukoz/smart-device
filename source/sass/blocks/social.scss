@@ -18,6 +18,7 @@
 .social__item {
   @include style-reset;
   margin-right: 15px;
+  margin-bottom: 10px;
 
   &:last-child {
     margin-right: 0;
@@ -25,7 +26,19 @@
 }
 
 .social__item a {
+  display: block;
   line-height: 0;
+}
+
+.social__item a:hover svg,
+.social__item a:focus svg {
+  @include animation;
+  fill: $color-primary;
+}
+
+.social__item a:active svg {
+  @include animation;
+  fill: $color-primary-05;
 }
 
 .social__item svg {

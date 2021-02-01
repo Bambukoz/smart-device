@@ -15,7 +15,7 @@
   <link rel="preload" href="fonts/PTMono-Regular.woff" as="font">
 </head>
 
-<body class="page">
+<body class="page js-page">
 <header class="page__header header">
   <div class="page__wrapper">
     <a class="logo" aria-label="Логотип Smart device - умные технологии">
@@ -39,7 +39,7 @@
         </svg>
         <span>+7 (495) 000 52 52</span>
       </a>
-      <a class="btn btn__request" href="#" target="_blank" rel="noopener noreferrer">Заказать звонок</a>
+      <a class="btn btn__request js-modal-open" href="#">Заказать звонок</a>
     </div>
   </div>
 </header>
@@ -50,8 +50,8 @@
       <div class="lead__wrapper">
         <h1>Печатные платы</h1>
         <p>Производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="btn btn__features" href="#features"><span>Получить бесплатную консультацию</span><span class="btn__text">Бесплатная консультация</span></a>
-        <a class="lead__scroll" href="#form">Скролл вниз</a>
+        <a class="btn btn__features" href="#feedback"><span>Получить бесплатную консультацию</span><span class="btn__text">Бесплатная консультация</span></a>
+        <a class="lead__scroll" href="#features">Скролл вниз</a>
       </div>
       <div class="lead__img-wrapper">
         <picture>
@@ -72,7 +72,7 @@
     </section>
   </div>
   <div class="main__container">
-    <section class="features">
+    <section class="features" id="features">
       <h2 class="visually-hidden">Почему вы должны выбрать именно нас</h2>
       <ul class="features__list">
         <li class="features__item">
@@ -131,7 +131,7 @@
               <!-- 1x: 715px; 2x: 1430px -->
               <source media="(max-width: 1023px)" srcset="img/png/production-tablet@1x.png, img/png/montage-tablet@2x.png 2x">
               <!-- 1x: 370px; 2x: 740px -->
-              <img width="370" height="620" src="img/png/production-desktop@1x.png" srcset="img/png/production-desktop@2x.png 2x" alt="Печатная плата">
+              <img width="370" height="620" src="img/png/production-desktop@1x.png" srcset="img/png/production-desktop@2x.png 2x" alt="Производство">
             </picture>
           </a>
         </li>
@@ -150,7 +150,7 @@
               <!-- 1x: 715px; 2x: 1430px -->
               <source media="(max-width: 1023px)" srcset="img/png/montage-tablet@1x.png, img/png/montage-tablet@2x.png 2x">
               <!-- 1x: 370px; 2x: 740px -->
-              <img width="370" height="620" src="img/png/montage-desktop@1x.png" srcset="img/png/montage-desktop@2x.png 2x" alt="Печатная плата">
+              <img width="370" height="620" src="img/png/montage-desktop@1x.png" srcset="img/png/montage-desktop@2x.png 2x" alt="Монтаж">
             </picture>
           </a>
         </li>
@@ -169,11 +169,36 @@
               <!-- 1x: 715px; 2x: 1430px -->
               <source media="(max-width: 1023px)" srcset="img/png/accessories-tablet@1x.png, img/png/accessories-tablet@2x.png 2x">
               <!-- 1x: 370px; 2x: 740px -->
-              <img width="370" height="620" src="img/png/accessories-desktop@1x.png" srcset="img/png/accessories-desktop@2x.png 2x" alt="Печатная плата">
+              <img width="370" height="620" src="img/png/accessories-desktop@1x.png" srcset="img/png/accessories-desktop@2x.png 2x" alt="LED лента">
             </picture>
           </a>
         </li>
       </ul>
+    </section>
+  </div>
+  <div class="main__container main__container--feedback">
+    <section class="feedback" id="feedback">
+      <h2>Остались вопросы? Задайте их нам!</h2>
+      <p>Мы проконсультируем Вас бесплатно</p>
+      <form class="form js-form" action="https://echo.htmlacademy.ru" method="get">
+        <label class="visually-hidden" for="name"></label>
+        <input id="name" name="name" type="text" placeholder="Имя" required="">
+        <label class="visually-hidden" for="tel"></label>
+        <input id="tel" name="tel" type="tel" placeholder="Телефон" minlength="18" maxlength="18" data-mask="+7 (___) ___-__-__" required="">
+        <label class="visually-hidden" for="question"></label>
+        <textarea id="question" name="question" placeholder="Ваш вопрос"></textarea>
+        <button class="btn btn__submit" type="submit">Задать вопрос</button>
+        <label class="form__checkbox" for="consent">
+          <input id="consent" name="consent" type="checkbox" checked="" required="">
+          <span>Я согласен на обработку  персональных данных</span>
+        </label>
+      </form>
+      <picture>
+        <!-- 1x: 686px; 2x: 1372px -->
+        <source type="image/webp" srcset="img/png/paper-airplane@1x.webp, img/png/paper-airplane@2x.webp 2x">
+        <!-- 1x: 686px; 2x: 1372px -->
+        <img width="686" height="641" src="img/png/paper-airplane@1x.png" srcset="img/png/paper-airplane@2x.png 2x" alt="Бумажный самолетик">
+      </picture>
     </section>
   </div>
 </main>
@@ -263,6 +288,30 @@
     </section>
   </div>
 </footer>
+
+<section class="feedback feedback--modal js-modal">
+  <div class="feedback__success">
+    <p>Форма успешно отправлена, спасибо! :)</p>
+  </div>
+  <h2>Закажите звонок</h2>
+  <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
+  <button class="btn btn__close js-modal-close" type="button" aria-label="Закрыть окно"></button>
+  <form class="form form--modal js-form-modal" action="https://echo.htmlacademy.ru" method="get">
+    <label class="visually-hidden" for="modalName"></label>
+    <input id="modalName" name="name" type="text" placeholder="Имя" required="">
+    <label class="visually-hidden" for="modalTel"></label>
+    <input id="modalTel" name="tel" type="tel" placeholder="Телефон" minlength="18" maxlength="18" data-mask="+7 (___) ___-__-__" required="">
+    <label class="visually-hidden" for="modalQuestion"></label>
+    <textarea id="modalQuestion" name="question" placeholder="Ваш вопрос"></textarea>
+    <button class="btn btn__submit btn__modal" type="submit">Отправить</button>
+    <label class="form__checkbox form__modal-checkbox" for="modal-consent">
+      <input id="modal-consent" name="consent" type="checkbox" checked="" required="">
+      <span>Я согласен на обработку&emsp;персональных данных</span>
+    </label>
+  </form>
+</section>
+<div class="overlay js-overlay"></div>
+
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
 </body>
