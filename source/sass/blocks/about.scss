@@ -19,7 +19,7 @@
     padding-bottom: 0;
   }
 
-  &:before {
+  &::before {
     content: "";
     position: absolute;
     top: 80px;
@@ -71,6 +71,7 @@
 }
 
 .about p {
+  @include style-reset;
   font-family: $font-family-secondary;
   line-height: 22px;
   color: $color-gray;
@@ -78,6 +79,12 @@
 
   @include tablet {
     padding-left: 3px;
+  }
+}
+
+.about span {
+  @include tablet {
+    margin-left: -10px;
   }
 }
 
@@ -98,7 +105,7 @@
     margin-bottom: 39px;
 
     @include tablet {
-      margin-bottom: 42px
+      margin-bottom: 42px;
     }
 
     @include mobile {
@@ -116,6 +123,7 @@
 
   &--short {
     display: none;
+
     @include tablet {
       display: inline;
     }

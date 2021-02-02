@@ -6,3 +6,7 @@ env:
 
 extends:
   "htmlacademy/es5.5"
+
+rules: {
+  "quotes": [ 2, "single", { "avoidEscape": true } ]
+}

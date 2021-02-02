@@ -6,7 +6,7 @@
   align-items: center;
   background-color: $background-color-white-gray;
   padding-top: 65px;
-  padding-bottom: 14px;
+  padding-bottom: 6px;
 
   @include tablet {
     min-height: 457px;
@@ -28,15 +28,16 @@
       height: 1px;
       background-color: $border-color-gray-02;
     }
+
     @include mobile {
       display: none;
     }
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
-    bottom: 52px;
+    bottom: 51px;
     left: 0;
     width: 100%;
     height: 1px;
@@ -67,7 +68,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 69px;
+  padding-bottom: 61px;
 
   @include tablet {
     padding-top: 38px;
@@ -98,7 +99,7 @@
       flex-direction: column;
       justify-content: flex-start;
       padding-top: 23px;
-      padding-bottom: 44px;
+      padding-bottom: 36px;
     }
   }
 
@@ -185,9 +186,9 @@
   }
 }
 
-.footer__copyright p,
+.footer p,
 .footer__copyright a,
-.footer__text {
+.footer__copyright span {
   font-family: $font-family-secondary;
   font-size: 13px;
   line-height: 185%;
@@ -200,9 +201,11 @@
 
 .footer__copyright a {
   width: 34%;
+  margin-left: -65px;
 
   @media (max-width: 1200px) {
     width: 31%;
+    margin-left: 0;
   }
 
   @include mobile {
@@ -212,37 +215,31 @@
   }
 }
 
-.footer__text {
-  display: inline-flex;
-  width: 32.2%;
-  min-width: 410px;
-  justify-content: space-between;
-  margin-right: 30px;
+.footer__copyright span {
+  margin-right: 65px;
 
   @include tablet {
     display: none;
   }
-
-  &--social {
-    display: none;
-
-    @include tablet {
-      display: block;
-      width: 33%;
-      min-width: auto;
-      margin-left: 2.5%;
-      margin-right: 0;
-    }
-
-    @include mobile {
-      width: 100%;
-      margin-left: 0;
-      text-align: center;
-      margin-bottom: 31px;
-    }
-  }
 }
 
-.footer__text span {
-  margin-right: 20px;
+
+.footer__container--social p {
+  @include style-reset;
+  display: none;
+
+  @include tablet {
+    display: block;
+    width: 33%;
+    min-width: auto;
+    margin-left: 2.5%;
+    margin-right: 0;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }

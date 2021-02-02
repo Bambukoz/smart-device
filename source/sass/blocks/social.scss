@@ -7,6 +7,7 @@
 
   @include tablet {
     width: 15.5%;
+    padding-top: 6px;
   }
 
   @include mobile {
@@ -25,18 +26,18 @@
   }
 }
 
-.social__item a {
+.social__link {
   display: block;
   line-height: 0;
 }
 
-.social__item a:hover svg,
-.social__item a:focus svg {
+.social__link:hover svg,
+.social__link:focus svg {
   @include animation;
   fill: $color-primary;
 }
 
-.social__item a:active svg {
+.social__link:active svg {
   @include animation;
   fill: $color-primary-05;
 }
