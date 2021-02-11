@@ -3,33 +3,33 @@
   justify-content: center;
   padding-top: 33px;
   padding-bottom: 787px;
-  background-image: url("../img/png/bg-main-desktop@1x.png");
+  background-image: url("../img/png/bg-main-desktop@1x.webp");
   background-size: cover;
   background-color: $color-dark-blue;
   background-repeat: no-repeat;
   background-position: bottom;
 
   @include retina {
-    background-image: url("../img/png/bg-main-desktop@2x.png");
+    background-image: url("../img/png/bg-main-desktop@2x.webp");
   }
 
   @include tablet {
-    background-image: url("../img/png/bg-main-tablet@1x.png");
+    background-image: url("../img/png/bg-main-tablet@1x.webp");
     padding-top: 20px;
     padding-bottom: 608px;
 
     @include retina {
-      background-image: url("../img/png/bg-main-tablet@2x.png");
+      background-image: url("../img/png/bg-main-tablet@2x.webp");
     }
   }
 
   @include mobile {
     padding-top: 17px;
     padding-bottom: 592px;
-    background-image: url("../img/png/bg-main-mobile@1x.png");
+    background-image: url("../img/png/bg-main-mobile@1x.webp");
 
     @include retina {
-      background-image: url("../img/png/bg-main-mobile@2x.png");
+      background-image: url("../img/png/bg-main-mobile@2x.webp");
     }
   }
 }

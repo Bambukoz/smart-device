@@ -26,18 +26,34 @@
     width: 90.3%;
     padding-left: 0;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -152px;
+    right: 36.45vw;
+    width: 670px;
+    height: 641px;
+    background-image: url("../img/svg/bg-triangle.svg");
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    @include tablet {
+      display: none;
+    }
+  }
 }
 
 .feedback img {
   position: absolute;
-  width: 35.7vw;
+  width: 26.7vw;
   min-width: 400px;
-  top: -7.9vw;
-  left: -200px;
+  top: 3.6vw;
+  left: -27px;
   z-index: -1;
 
-  @media (max-width: 1250px) {
-    left: -300px;
+  @media (max-width: 1300px) {
+    left: -280px;
   }
 
   @include tablet {
