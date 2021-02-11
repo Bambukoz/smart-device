@@ -23,7 +23,7 @@
 }
 
 .btn__request:hover,
-.btn__request:active{
+.btn__request:active {
   color: $color-primary;
   border-color: $color-primary;
 }
@@ -106,7 +106,7 @@
 }
 
 .btn__submit {
-  width: 14.1vw;
+  width: 270px;
   min-width: 151px;
   min-height: 45px;
   padding: 14px 18px 13px;
@@ -145,31 +145,32 @@
 
   @include mobile {
     position: absolute;
-    top: 14px;
-    right: 5px;
+    top: 0;
+    right: 0;
     display: block;
-    width: 16px;
-    height: 16px;
+    width: 100%;
+    height: 72px;
     appearance: none;
     background-image: url("../img/svg/btn-plus.svg");
-    background-position: center;
+    background-position: 94.4% center;
     background-repeat: no-repeat;
     border: none;
-    padding: 20px;
+    padding: 15px;
+    z-index: 100;
 
-    &--nav:checked + .nav {
-      display: flex;
-    }
-
-    &--location:checked + .footer__location {
-      display: flex;
-    }
-
-    &:checked {
-      top: 13px;
+    &--active {
       background-image: url("../img/svg/btn-minus.svg");
     }
+
+    &--nojs {
+      display: none;
+    }
   }
+}
+
+.btn__accordion--active + .nav,
+.btn__accordion--active + .footer__location {
+  display: flex;
 }
 
 .btn__close {
@@ -188,9 +189,9 @@
 
 .btn__close:hover,
 .btn__close:focus {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .btn__close:active {
-  opacity: 0.5;
+  opacity: 0.3;
 }

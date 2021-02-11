@@ -13,6 +13,10 @@
     padding-left: 28vw;
   }
 
+  @media (max-width: 1250px) {
+    padding-left: 14vw;
+  }
+
   @include tablet {
     width: 77.3%;
     padding-left: 0;
@@ -27,10 +31,14 @@
 .feedback img {
   position: absolute;
   width: 35.7vw;
-  min-width: 500px;
+  min-width: 400px;
   top: -7.9vw;
   left: -200px;
   z-index: -1;
+
+  @media (max-width: 1250px) {
+    left: -300px;
+  }
 
   @include tablet {
     display: none;
@@ -137,4 +145,9 @@
 
 .feedback__success--active {
   display: flex;
+}
+
+.feedback--page {
+  display: flex;
+  top: 100px;
 }

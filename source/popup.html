@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Мы делаем железки, потом монтируем их, а вы платите нам за это. Все понятно?">
+    <title>Проект Акселератора - "Smart Device"</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font">
+    <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/PTMono-Regular.woff" as="font">
+  </head>
+
+  <body class="page js-page">
+    <header class="page__header header header--popup">
+      <div class="page__wrapper">
+        <a class="logo" href="index.html" aria-label="Логотип Smart device - умные технологии">
+          <svg class="logo__desktop" width="202" height="52">
+            <use xlink:href="img/sprite.svg#logo-header-desktop"></use>
+          </svg>
+          <svg class="logo__mobile" width="38" height="38">
+            <use xlink:href="img/sprite.svg#logo-header-mobile"></use>
+          </svg>
+        </a>
+      </div>
+    </header>
+    <main>
+      <section class="feedback feedback--modal feedback--page js-modal">
+        <div class="feedback__success">
+          <p>Форма успешно отправлена, спасибо! :)</p>
+        </div>
+        <h2>Закажите звонок</h2>
+        <p>Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
+        <a class="btn btn__close js-modal-close" href="index.html" aria-label="Вернуться обратно"></a>
+        <form class="form form--modal js-form-modal" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="modalName"></label>
+          <input id="modalName" name="name" type="text" placeholder="Имя" required>
+          <label class="visually-hidden" for="modalTel"></label>
+          <input id="modalTel" name="tel" type="tel" placeholder="Телефон" minlength="18" maxlength="18" data-mask="+7 (___) ___-__-__" required>
+          <label class="visually-hidden" for="modalQuestion"></label>
+          <textarea id="modalQuestion" name="question" placeholder="Ваш вопрос"></textarea>
+          <button class="btn btn__submit btn__modal" type="submit">Отправить</button>
+          <label class="form__checkbox form__modal-checkbox" for="modal-consent">
+            <input id="modal-consent" name="consent" type="checkbox" checked required>
+            <span>Я согласен на обработку&emsp;персональных данных</span>
+          </label>
+        </form>
+      </section>
+    </main>
+    <script src="js/vendor.js"></script>
+  </body>

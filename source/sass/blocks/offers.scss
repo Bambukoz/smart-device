@@ -48,10 +48,10 @@
 }
 
 .offers__item {
-  width: 19.3vw;
+  width: 31.5%;
   display: flex;
   flex-direction: column;
-  margin-right: 2.45%;
+  margin-right: 2.7%;
   margin-bottom: 46px;
 
   @include tablet {
@@ -92,7 +92,7 @@
     padding-left: 35px;
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -107,7 +107,7 @@
 }
 
 .offers__item a:hover,
-.offers__item a:focus{
+.offers__item a:focus {
   @include animation;
   background-color: $color-gray-03;
 }

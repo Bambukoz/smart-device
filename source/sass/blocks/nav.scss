@@ -2,6 +2,10 @@
   width: 100%;
   display: flex;
 
+  @include tablet {
+    flex-direction: column;
+  }
+
   @include mobile {
     display: none;
     margin-top: 31px;
@@ -10,30 +14,29 @@
 
 .nav__list {
   @include list-reset;
-  width: 100%;
+  width: 44.4%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @include tablet {
+    width: 100%;
+  }
 }
 
 .nav__item {
   @include style-reset;
-  width: 41%;
-  margin-right: 6.3%;
+  width: 100%;
 
   @include tablet {
     width: 100%;
-
-    &:nth-child(2n) {
-      margin-right: 0;
-
-      @include tablet {
-        order: 1;
-      }
-    }
   }
 }
 
-.nav__item:nth-child(2n) a {
+.nav__list--left {
+  margin-right: 20px;
+}
+
+.nav__list--right a {
   letter-spacing: 0.03em;
 
   @include tablet {

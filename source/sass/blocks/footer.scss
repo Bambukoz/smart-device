@@ -68,7 +68,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 61px;
+  padding-bottom: 62px;
 
   @include tablet {
     padding-top: 38px;
@@ -91,7 +91,7 @@
       align-items: center;
       justify-content: space-between;
       padding-top: 0;
-      padding-bottom: 18px;
+      padding-bottom: 26px;
       margin-right: 0;
     }
 
@@ -166,6 +166,10 @@
 
 .footer__location address {
   font-style: normal;
+}
+
+.footer__location a {
+  width: 171px;
 }
 
 .footer__copyright {

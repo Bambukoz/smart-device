@@ -18,36 +18,46 @@
   }
 }
 
+.contacts__wrapper {
+  width: 430px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include tablet {
+    width: auto;
+    margin-right: -12px;
+  }
+
+  @include mobile {
+    margin-right: -5px;
+  }
+}
+
 .contacts__link {
   display: block;
   position: relative;
-  margin-left: 4.1%;
+  margin-right: 88px;
 
   @include tablet {
     line-height: 0;
     padding: 12px;
+    margin-right: 0;
   }
 
   @include mobile {
     padding: 5px;
   }
 
-  &--phone {
-    margin-left: 7.5%;
+  &:nth-child(2n) {
+    margin-right: 0;
 
     @include tablet {
-      margin-left: 1.6%;
-      margin-right: -2.5%;
+      margin-left: 8px;
     }
 
     @include mobile {
-      margin-left: 4.8%;
-      margin-right: -2.3%;
+      margin-left: 12px;
     }
-  }
-
-  &:first-child {
-    margin-left: 0;
   }
 }
 
