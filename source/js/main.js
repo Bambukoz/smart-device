@@ -15,6 +15,7 @@
     PAGE_LOCKED: 'page--locked',
     ACCORDION_ACTIVE: 'btn__accordion--active',
     NOJS_CLASS: 'js-nojs',
+    NOJS_BTN_CLASS: 'js-btn-nojs',
     ACTIVE_CLASS: 'js-active'
   };
 
@@ -41,7 +42,7 @@
   };
 
   for (let btn of accordionBtns) {
-    btn.classList.remove(pageClass.NOJS_CLASS);
+    btn.classList.remove(pageClass.NOJS_BTN_CLASS);
     btn.addEventListener('click', toggleAccordion);
   }
   nav.classList.remove(pageClass.NOJS_CLASS);

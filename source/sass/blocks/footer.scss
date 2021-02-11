@@ -43,6 +43,10 @@
     height: 1px;
     background-color: $border-color-gray-02;
 
+    @media (max-width: 1173px) {
+      bottom: 73px;
+    }
+
     @include tablet {
       bottom: 69px;
     }
