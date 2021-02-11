@@ -38,7 +38,7 @@
       btnLocation.classList.toggle(pageClass.ACCORDION_ACTIVE);
       btnNav.classList.remove(pageClass.ACCORDION_ACTIVE);
     }
-  }
+  };
 
   for (let btn of accordionBtns) {
     btn.classList.remove(pageClass.NOJS_CLASS);
